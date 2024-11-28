@@ -21,6 +21,8 @@
                     <span>Possui uma Conta? <a href="#" onclick="Login()">Login</a></span>
                     <header>Cadastrar-se</header>
                 </div>
+
+                <!-- dois-form armazena os inputs -->
                 <div class="dois-form">
                     <div class="input-box">
                         <input type="text" id="nome" class="input-campo" placeholder="Nome">
@@ -41,6 +43,7 @@
                     </div>
 
                     <div class="input-box">
+                        <!-- Botão de Envio ACESSAR -->
                         <button class="button">
                             <div class="dots_border"></div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="sparkle">
@@ -59,19 +62,20 @@
                             </svg>
                             <span class="text_button">Registre-se</span>
                         </button>
-
                     </div>
-
                 </div>
             </div>
             <!------------------------------------- Sign In ------------------------------------------------------->
             <div class="conteiner-login" id="login">
+                
+                <!-- Armazena mensagem com opções de acesso -->
                 <div class="topo">
                     <span>Não possui uma Conta? <a href="#" onclick="Registro()">Cadastrar-se</a></span>
                     <header>Conecte-se</header>
                 </div>
-                <div class="dois-form">
 
+                <!-- dois-form armazena os inputs -->
+                <div class="dois-form">
                     <div class="input-box" id="input-box">
                         <input type="email" id="email" class="input-campo" placeholder="Username ou Email">
                         <i class="bx bx-user"></i>
@@ -124,9 +128,6 @@
 
                     </div>
 
-
-
-
                     <div class="input-box">
                         <input type="submit" class="enviar" value="Próximo" onclick="bloqRedefinir()"
                             ondblclick="RedefinirDois()">
@@ -140,23 +141,13 @@
                     <a href="login.html"><i class='bx bx-log-out-circle'></i></a>
                     <span>Um email de verificação foi enviado para este endereço de email, por favor verifique.</span>
                 </div>
-
-
-
-
-
             </div>
         </div>
     </div>
     </div>
 
-    <!--------------------------- JavaScript ----------------------------------------------------->
-
-    <script src="script.js">
-       
-
-
-    </script>
+    <!---JavaScript ---------->
+    <script src="script.js"></script>
 
 </body>
 
