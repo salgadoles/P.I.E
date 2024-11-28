@@ -4,20 +4,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>Conecte em P.I.E</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script href="login.js"></script>
-    <style>
-        body {
-            background-image: url(imagens/imagemdefundo.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-    </style>
-
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 
 <body>
@@ -85,7 +75,6 @@
                     <div class="input-box" id="input-box">
                         <input type="email" id="email" class="input-campo" placeholder="Username ou Email">
                         <i class="bx bx-user"></i>
-
                     </div>
 
                     <div class="input-box">
@@ -94,7 +83,8 @@
                     </div>
 
                     <div class="input-box">
-                        <button class="button">
+                        <!-- Botão de Envio ACESSAR -->
+                        <button class="button" id="btnLogin">
                             <div class="dots_border"></div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="sparkle">
                                 <path class="path" stroke-linejoin="round" stroke-linecap="round" stroke="black"
@@ -110,7 +100,7 @@
                                     d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24777 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z">
                                 </path>
                             </svg>
-                            <span class="text_button">Registre-se</span>
+                            <span class="text_button">Acessar</span>
                         </button>
                     </div>
                     <div class="col">
@@ -162,83 +152,8 @@
 
     <!--------------------------- JavaScript ----------------------------------------------------->
 
-    <script>
-        /*Termos técnicos:
-        bloq= bloquear
-        Registro = Fomulario de Cadastro
-        Redefinir= Fomulario de recuperação de senha
-        */
-
-        /* id de cada area do formulário*/
-        var w = document.getElementById("recuperar-dois")
-        var x = document.getElementById("login");
-        var y = document.getElementById("registro");
-        var z = document.getElementById("recuperar");
-
-
-        /* função tipo carrosel, movendo um fomulário de fora da tela para o centro */
-        function Login() {
-            x.style.left = "100px";
-            y.style.right = "-520px";
-            z.style.right = "-520px";
-            w.style.right = "-520px";
-        }
-        function Registro() {
-            x.style.left = "-590px";
-            y.style.right = "90px";
-        }
-        function Redefinir() {
-            x.style.left = "-590px";
-
-            z.style.right = "90px";
-        }
-        function RedefinirDois() {
-            z.style.left = "-590px";
-            w.style.right = "90px";
-        }
-
-
-        /* Função de preenchimento obrigatório, usando if, else e alert
-        */
-        function bloqLogin() {
-            let email = document.getElementById("email").value;
-            let senha = document.getElementById("senha").value;
-            if (email == "") {
-                alert("Preencha os campos.");
-
-            }
-            else if (senha == "") {
-                alert("Preencha os campos.");
-            }
-
-        }
-        function bloqRedefinir() {
-            let email = document.getElementById("email-redefinir").value;
-            if (email == "") {
-                alert("Preencha os campos.");
-
-            }
-
-
-        }
-
-        function bloqCad() {
-            let nome = document.getElementById("nome").value;
-            let sobrenome = document.getElementById("sobrenome").value
-            let email = document.getElementById("email-cad").value;
-            let senha = document.getElementById("senha-cad").value;
-            if (nome == "") {
-                alert("Preencha os campos.");
-
-            } else if (sobrenome == "") {
-                alert("Preencha os campos.");
-            } else if (email == "") {
-                alert("Preencha os campos.");
-            } else if (senha == "") {
-                alert("Preencha os campos.");
-            }
-        }
-
+    <script src="script.js">
+       
 
 
     </script>
