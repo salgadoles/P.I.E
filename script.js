@@ -73,23 +73,6 @@ document.getElementById("btnCadastro").addEventListener("click", (e) => {
     checarSenhaCad();
 
 })
-
-
-
-
-
-
-
-
-
-
-// ========================================================================================================================
-/*Termos técnicos:
-       bloq= bloquear
-       Registro = Fomulario de Cadastro
-       Redefinir= Fomulario de recuperação de senha
-       */
-
 /* id de cada area do formulário*/
 var w = document.getElementById("recuperar-dois")
 var x = document.getElementById("login");
